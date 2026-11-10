@@ -1,0 +1,10 @@
+The village market opens early in the morning. Farmers bring tomatoes, onions, green chillies and bananas on bicycles and in small trucks.
+By seven o'clock the street is full of people. Shopkeepers call out their prices and buyers walk from stall to stall, comparing the vegetables.
+A tea seller stands near the bus stop. He pours hot tea from one cup to another to cool it, and the smell of ginger fills the air.
+Children on their way to school stop to buy biscuits. Their teacher waits at the gate and counts them as they come in.
+In the afternoon the market becomes quiet. The farmers count their money, load the empty baskets and start the long ride home.
+Learning to program is a little like learning to cook. At first you follow every step exactly. Later you understand why each step is there, and you begin to change the recipe.
+A tokenizer breaks text into small pieces called tokens. A model reads tokens, not letters or words, so the way text is split changes how much a model can read at once.
+Byte pair encoding starts from single bytes and repeatedly joins the most common pair of neighbouring tokens into a new token. After many merges, common words become one token.
+Rare words are still possible, because they can always be built from smaller pieces, down to single bytes.
+The rain came suddenly in the evening. People ran under shop roofs, and the market smelled of wet earth.
