@@ -18,7 +18,7 @@ def main():
     telugu = open("data/telugu.txt", encoding="utf-8").read()
     tok = BPETokenizer()
     tok.train(english + "\n" + telugu, vocab_size)
-    tok.save("tokenizer.json")
+    tok.save("merges.json")
     print(f"vocabulary: {len(tok.vocab)} tokens ({len(tok.merges)} merges) + {len(tok.special_tokens)} special")
     print(f"{'text':<10}{'chars':>8}{'bytes':>8}{'tokens':>8}{'tokens/char':>13}")
     for name, text in (("English", english), ("Telugu", telugu)):

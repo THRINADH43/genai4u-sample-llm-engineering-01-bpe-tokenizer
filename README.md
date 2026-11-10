@@ -9,7 +9,7 @@ No API key is needed and an ordinary laptop is enough.
 ## Run
 
 ```
-python compare.py        # trains on data/, prints the comparison, saves tokenizer.json
+python compare.py        # trains on data/, prints the comparison, saves merges.json
 python -m unittest discover -s tests
 ```
 
@@ -29,7 +29,9 @@ file says the same things as the first part of the English file.
    time. It stops at the requested vocabulary size, or when no pair appears twice.
 3. Encoding applies the learned merges in the order they were learned.
 4. Decoding joins the bytes of each token and turns them back into text.
-5. Special tokens (`<|endoftext|>`) are split out before encoding and get their own id, so
+5. The merges are saved in order to `merges.json` (committed here) and `BPETokenizer.load`
+   reads them back.
+6. Special tokens (`<|endoftext|>`) are split out before encoding and get their own id, so
    they are never broken into pieces.
 
 ## Results (vocab size 600)
